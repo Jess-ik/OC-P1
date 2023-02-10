@@ -4,7 +4,51 @@
 }
 
 body {
-    max-width: 1400px;
+    max-width: 1440px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 55px;
 }
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Styles du Header */
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 61px;
+    height: 19px;   
+}
+
+header nav ul{
+    display: flex;   
+    justify-content: space-between;
+    color: #000000;
+    gap: 27px;
+    margin: 0;
+}
+
+header nav li a {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    border-top: solid 2px #ffffff;
+    padding: 44px 26px;
+}
+
+header nav li a:hover {
+    color: #0065FC;
+    border-top : solid 2px #0065FC;  
+    transition: 0.5s  ease;
+}
+

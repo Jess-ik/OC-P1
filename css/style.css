@@ -5,7 +5,7 @@
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 50px;
 }
@@ -37,7 +37,6 @@ header nav ul{
     display: flex;   
     justify-content: space-between;
     color: #000000;
-    gap: 15px;
     margin: 0;
 }
 
@@ -57,26 +56,24 @@ header nav li a:hover {
     transition: 0.5s  ease;
 }
 
-/* Main */
-main {
+/* MAIN */
+
+
+/* SECTION SERCH */
+.search {
     margin: 0;
+    padding: 10px 5px 0 5px;
 }
 
-/* Styles du Search */
-#search {
-    /*background-color: aquamarine;*/
-    margin: 0;
-    padding: 13px 5px 0 5px;
-}
 /* Styles du Search Title */
-#search h1 {
+.search h1 {
     font-weight: 700;
     font-size: 22px;
     line-height: 25.83px;
     margin: 0;
 }
 
-#search p {
+.search p {
     font-size: 16px;
     font-weight: 400;
     line-height: 18.78px;
@@ -84,13 +81,13 @@ main {
 }
 
 /* Styles du Search Form */
-#search form {
-    padding: 10px 0;
+.search form {
+    padding: 8px 0;
     display: flex;
     
 }
 
-#search form label {
+.search form label {
     background-color: #f2f2f2;
     width: 50px;
     height: 49px;
@@ -98,25 +95,25 @@ main {
     justify-content: center;
     align-items: center;
     border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 15px 0px 0px 15px;cursor: pointer;
 }
 
-#search form input {
+.search form input {
     border: 1px solid #F2F2F2;
-    padding: 0 18px 0 17px;
+    padding: 0 2px 0 17px;
     font-size: 18px;
     font-weight: 700;
     line-height: 21.13px;
     outline: none;
 }
 
-#search form input::placeholder{
+.search form input::placeholder{
     color: #000000;
     opacity: 1;
 
 }
 
-#search form button {
+.search form button {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     background-color: #0065FC;
@@ -132,7 +129,7 @@ main {
 
 /* Styles du Search Filters */
 
-#search nav {
+.search nav {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -141,11 +138,19 @@ main {
     padding: 22px 0;
 }
 
-#search i {
+
+.search nav ul {
+    gap: 38px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+
+.filters i, .countresult i {
     color: #0065FC;
 }
 
-#search h2 {
+.search h2 {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
@@ -153,7 +158,7 @@ main {
     margin: 0;
 }
 
-#search ul {
+.search ul {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -163,7 +168,7 @@ main {
     padding: 0 0 0 32px;
 }
 
-#search li {
+.search li {
     padding: 12px 18px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
@@ -177,22 +182,21 @@ main {
     cursor: pointer;
 }
 
-#search li:hover {
+.search li:hover {
     background-color: #DEEBFF;
     transition: 0.5s  ease;
 }
 
 /* Styles Count Result */
 
-#search .countresult {
+.search .countresult {
     display: flex;
     align-items: center;
     gap:11px;
-    margin: 0 5px;
-    padding: 10px 0;
+    margin: 8px 5px;
 }
 
-#search .countresult i { 
+.search .countresult i { 
     width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
@@ -200,4 +204,267 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/* SECTION HEBERGEMENTS */
+
+.hebergements {
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 28px;
+    gap: 40px;
+}
+.housesbox, .popularbox{
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 22px 38px;
+    display: flex;
+    flex-direction: column;
+}
+
+.housesbox h2, .popularbox h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* Houses */
+
+.housesbox {
+    width: 68%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.housescards{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-flow: row wrap;
+    gap: 30px;
+    margin: 4px 0;
+
+}
+
+.housearticle {
+    width: 30.5%;
+    height: 199px;
+    background-color: #ffffff;
+    padding: 5px 5px 10px 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1) ;
+}
+
+.housearticle:hover {
+    transition: 0.5s all;
+    transform: scale(1.05);
+}
+
+.housescards .houseimg img {
+    width: 100%;
+    height: 116px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+}
+
+.housedescription {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding:0 10px;
+}
+
+.housetitle h3{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+.housetitle p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 6px;
+}
+
+.houserate {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.houserate i {
+    color: #0065FC;
+}
+
+.houserate .grey {
+    color: #F2F2F2;
+}
+
+.houserate i:hover {
+    color: #0065FC;
+    transition: 0.25s ease;
+}
+
+.houserate i:hover~i {
+    color: #f2f2f2;
+    transition: 0.25s ease;
+}
+
+.housesbox .more  {
+    border: none;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 40px 4px 24px 0;
+}
+
+.housesbox .more:hover {
+    color: #0065FC; 
+    transition: 0.2s  ease;
+}
+
+/* Popular */
+
+.popularbox {
+    width: 32%;
+}
+
+.popularhead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.popularhead i{
+    color: #0065FC;
+}
+
+.popularcards {
+    display: flex;
+    flex-direction: column;
+    gap: 33px;
+}
+
+.populararticle a {
+    height: 144px;
+    background-color: #ffffff;
+    padding: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1) ;
+}
+
+.populararticle:hover {
+    transition: 0.5s all;
+    transform: scale(1.05);
+}
+
+.populararticle .houseimg {
+    width: 40%;
+}
+.populararticle .houseimg img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    object-fit: cover;
+}
+
+.populararticle .housedescription {
+    padding: 16px 10px 12px 20px;
+    margin: 0;
+    width : 66%
+}
+
+/* SECTION ACTIVITES */
+
+
+#activites h2 {
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0;
+    padding: 60px 0 20px 0;
+}
+
+.activitiesbox {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.activitycard {
+    width: 23%;
+    border-radius: 20px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+}
+
+.activitycard:hover {
+    transition: 0.5s all;
+    transform: scale(1.05);
+}
+
+.activitycard img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.activitycard h3 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+    padding: 15px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #F2F2F2;
+    padding:0;
+    margin-top: 60px;
+}
+
+footer nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 220px;
+    padding: 24px 0 46px 63px;
+    margin: 0;
+}
+
+footer nav h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+}
+footer nav .footernav {
+    display: flex;
+    flex-direction: column ;
+}
+
+footer nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+footer nav ul li {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    padding-bottom: 12px;
+}
+
+footer nav ul li a:hover {
+    color: #0065FC;
+    transition: 0.3s all;
 }

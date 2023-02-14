@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Viewport for responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Import Raleway 400 & 700-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +13,9 @@
     <!--Import Font Awesome-->
     <script src="https://kit.fontawesome.com/9d9c39db54.js" crossorigin="anonymous"></script>
     <title>Booki - Trouvez votre hébergement pour des vacances de rêve !</title>
+    <!--Import CSS files-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 
 <body>
@@ -21,32 +24,37 @@
         <a href="#"><img src="./images/logo/Booki.png" alt="logo Booki"></a>
         <nav>
             <ul>
-                <li><a href="#hebergements">Hébergements</a></li>
-                <li><a href="#activites">Activités</a></li>
+                <li><a href="#housing">Hébergements</a></li>
+                <li><a href="#activities">Activités</a></li>
             </ul>
         </nav>
     </header>
+
     <!--MAIN CONTENT-->
     <main>
-        <!--SECTION SERCH-->
+        <!--SECTION SEARCH-->
         <section id="search" class="search">
-            <!--Title-->
-            <div>
+            <!--Search Title-->
+            <div class="search-title">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
             </div>
-            <!--Serch bar-->
+
+            <!--Search Bar-->
             <form action="#" method="POST">
                 <label for="location">
                     <i class="fa-solid fa-location-dot"></i>
                 </label>
                 <input type="text" id="location" name="location" placeholder="Marseille, France">
                 <button>
+                    <!-- For Desktop & Tablet -->
                     <span>Rechercher</span>
+                    <!-- For Mobile -->
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </form>
-            <!--Filters-->
+
+            <!--Search Filters-->
             <nav class="filters">
                 <h2>Filtres</h2>
                 <ul>
@@ -56,31 +64,37 @@
                     <li><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
                 </ul>
             </nav>
-            <!--Count result-->
-            <div class="countresult">
+
+            <!--Search Count Result-->
+            <div class="count-result">
                 <i class="fa-solid fa-info fa-xs"></i>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
         </section>
 
-        <!--SECTION HEBERGEMENTS-->
-        <section id="hebergements" class="hebergements">
+        <!--SECTION HOUSING-->
+        <section id="housing" class="housing">
             <!-- Houses Box -->
-            <div class="housesbox">
+            <div class="houses-box">
                 <h2>Hébergements à Marseille</h2>
-                <!-- Results houses cards -->
-                <div class="housescards">
-                    <article class="housearticle">
-
-                        <div class="houseimg">
+                <!-- Houses Cards -->
+                <div class="houses-cards">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/01.jpg" alt="Auberge de la Canebière">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Auberge de la Canebière</h3>
                                 <p>Nuit à partir de 25<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -88,19 +102,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="housearticle">
 
-                        <div class="houseimg">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/02.jpg" alt="Hôtel du port">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Hôtel du port</h3>
                                 <p>Nuit à partir de 52<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -108,19 +127,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="housearticle">
 
-                        <div class="houseimg">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/03.jpg" alt="Hôtel Les Mouettes">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Hôtel Les Mouettes</h3>
                                 <p>Nuit à partir de 76<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -130,17 +154,23 @@
                         </div>
 
                     </article>
-                    <article class="housearticle">
 
-                        <div class="houseimg">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/04.jpg" alt="Hôtel de la mer">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Hôtel de la mer</h3>
                                 <p>Nuit à partir de 46<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -148,19 +178,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="housearticle">
 
-                        <div class="houseimg">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/05.jpg" alt="Auberge Le Panier">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Auberge Le Panier</h3>
                                 <p>Nuit à partir de 23<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -168,19 +203,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="housearticle">
 
-                        <div class="houseimg">
+                    <article class="house-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/06.jpg" alt="Hôtel Chez Amina">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description-->
+                        <div class="house-description">
+                            <!-- Description Title-->
+                            <div class="house-title">
                                 <h3>Hôtel Chez Amina</h3>
                                 <p>Nuit à partir de 96<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate-->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -188,34 +228,37 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-
                 </div>
                 <a class="more" href="#">Afficher plus</a>
             </div>
 
             <!-- Popular Box -->
-            <div class="popularbox">
+            <div class="popular-box">
                 <!-- Popular Head -->
-                <div class="popularhead">
+                <div class="popular-head">
                     <h2>Les plus populaires</h2>
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
 
-                <!-- Popular house cards -->
-                <div class="popularcards">
-                    <article class="populararticle">
-
-                        <div class="houseimg">
+                <!-- Popular cards -->
+                <div class="popular-cards">
+                    <article class="popular-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/07.jpg" alt="Hôtel Le soleil du matin">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description -->
+                        <div class="house-description">
+                            <!-- Description Title -->
+                            <div class="house-title">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate -->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -223,19 +266,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="populararticle">
 
-                        <div class="houseimg">
+                    <article class="popular-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/08.jpg" alt="Chambres d'hôtes Au coeur de l'eau">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description -->
+                        <div class="house-description">
+                            <!-- Description Title -->
+                            <div class="house-title">
                                 <h3>Chambres d'hôtes Au coeur de l'eau</h3>
                                 <p>Nuit à partir de 71<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate -->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -243,19 +291,24 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
-                    <article class="populararticle">
 
-                        <div class="houseimg">
+                    <article class="popular-article">
+                        <!-- Article Img-->
+                        <div class="house-img">
                             <img src="./images/hebergements/09.jpg" alt="Hôtel Bleu et Blanc">
                         </div>
-                        <div class="housedescription">
-                            <div class="housetitle">
+
+                        <!-- Article Description -->
+                        <div class="house-description">
+                            <!-- Description Title -->
+                            <div class="house-title">
                                 <h3>Hôtel Bleu et Blanc</h3>
                                 <p>Nuit à partir de 68<b>€</b></p>
                             </div>
-                            <div class="houserate">
+
+                            <!-- Description Rate -->
+                            <div class="house-rate">
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
                                 <i class="fa-solid fa-star fa-xs"></i>
@@ -263,41 +316,40 @@
                                 <i class="fa-solid fa-star fa-xs grey"></i>
                             </div>
                         </div>
-
                     </article>
                 </div>
             </div>
         </section>
 
-        <!--SECTION ACTIVITES-->
-        <section id="activites">
+        <!--SECTION ACTIVITIES-->
+        <section id="activities" class="activities">
             <h2>Activités à Marseille</h2>
-            <div class="activitiesbox">
-                <article class="activitycard">
+            <div class="activities-box">
+                <article class="activity-card">
                     <img src="./images/activites/01.jpg" alt="Vieux-Port">
-                    <div class="activitiesdescription">
+                    <div class="activity-description">
                         <h3>Vieux-Port</h3>
                     </div>
                 </article>
-                <article class="activitycard">
+                <article class="activity-card">
                     <a href="#">
                         <img src="./images/activites/02.jpg" alt="Fort de Pomèrgues">
-                        <div class="activitiesdescription">
+                        <div class="activity-description">
                             <h3>Fort de Pomèrgues</h3>
                         </div>
                     </a>
                 </article>
-                <article class="activitycard">
+                <article class="activity-card">
                     <a href="#">
                         <img src="./images/activites/03.jpg" alt="Parc national des Calanques">
-                        <div class="activitiesdescription">
+                        <div class="activity-description">
                             <h3>Parc national des Calanques</h3>
                         </div>
                     </a>
                 </article>
-                <article class="activitycard">
+                <article class="activity-card">
                     <img src="./images/activites/04.jpg" alt="Notre-Dame-De-La-Garde">
-                    <div class="activitiesdescription">
+                    <div class="activity-description">
                         <h3>Notre-Dame-De-La-Garde</h3>
                     </div>
                 </article>
@@ -308,7 +360,8 @@
     <!--FOOTER-->
     <footer>
         <nav>
-            <div class="footernav">
+            <!-- COL 01 -->
+            <div class="footer-nav">
                 <h3>À propos</h3>
                 <ul>
                     <li><a href="#">Fonctionnement du site</a></li>
@@ -316,14 +369,18 @@
                     <li><a href="#">Données et confidentialité</a></li>
                 </ul>
             </div>
-            <div class="footernav">
+
+            <!-- COL 02 -->
+            <div class="footer-nav">
                 <h3>Nos hébergements</h3>
                 <ul>
                     <li><a href="#">Charte qualité</a></li>
                     <li><a href="#">Proposer votre hôtel</a></li>
                 </ul>
             </div>
-            <div class="footernav">
+
+            <!-- COL 03 -->
+            <div class="footer-nav">
                 <h3>Assistance</h3>
                 <ul>
                     <li><a href="#">Centre d'aide</a></li>

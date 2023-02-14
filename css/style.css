@@ -20,7 +20,7 @@ ul {
 }
 
 /* Styles du Header */
-header{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,12 +29,12 @@ header{
 
 header img {
     width: 61px;
-    height: 19px; 
-    margin: 5px;  
+    height: 19px;
+    margin: 5px;
 }
 
-header nav ul{
-    display: flex;   
+header nav ul {
+    display: flex;
     justify-content: space-between;
     color: #000000;
     margin: 0;
@@ -44,16 +44,16 @@ header nav li a {
     font-size: 16px;
     font-weight: 500;
     text-align: center;
-    line-height: 18.78px;
-    display: block;   
+    line-height: 19px;
+    display: block;
     border-top: solid 2px #ffffff;
     padding: 46px 27px;
 }
 
 header nav li a:hover {
     color: #0065FC;
-    border-top : solid 2px #0065FC;  
-    transition: 0.5s  ease;
+    border-top: solid 2px #0065FC;
+    transition: 0.5s ease;
 }
 
 /* MAIN */
@@ -84,7 +84,7 @@ header nav li a:hover {
 .search form {
     padding: 8px 0;
     display: flex;
-    
+
 }
 
 .search form label {
@@ -95,7 +95,8 @@ header nav li a:hover {
     justify-content: center;
     align-items: center;
     border: 1px solid #F2F2F2;
-    border-radius: 15px 0px 0px 15px;cursor: pointer;
+    border-radius: 15px 0px 0px 15px;
+    cursor: pointer;
 }
 
 .search form input {
@@ -107,7 +108,7 @@ header nav li a:hover {
     outline: none;
 }
 
-.search form input::placeholder{
+.search form input::placeholder {
     color: #000000;
     opacity: 1;
 
@@ -127,6 +128,10 @@ header nav li a:hover {
     cursor: pointer;
 }
 
+.search form button i {
+    display: none;
+}
+
 /* Styles du Search Filters */
 
 .search nav {
@@ -134,19 +139,14 @@ header nav li a:hover {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
+
     margin: 0 7px;
     padding: 22px 0;
 }
 
 
-.search nav ul {
-    gap: 38px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-}
-
-.filters i, .countresult i {
+.filters i,
+.countresult i {
     color: #0065FC;
 }
 
@@ -158,12 +158,12 @@ header nav li a:hover {
     margin: 0;
 }
 
-.search ul {
+.search nav ul {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    gap: 48px;
+    gap: 30px;
     margin: 0;
     padding: 0 0 0 32px;
 }
@@ -175,6 +175,7 @@ header nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: row nowrap;
     gap: 10px;
     font-weight: 700;
     font-size: 17px;
@@ -184,7 +185,7 @@ header nav li a:hover {
 
 .search li:hover {
     background-color: #DEEBFF;
-    transition: 0.5s  ease;
+    transition: 0.5s ease;
 }
 
 /* Styles Count Result */
@@ -192,11 +193,11 @@ header nav li a:hover {
 .search .countresult {
     display: flex;
     align-items: center;
-    gap:11px;
+    gap: 11px;
     margin: 8px 5px;
 }
 
-.search .countresult i { 
+.search .countresult i {
     width: 24px;
     height: 24px;
     border: 1px solid #D9D9D9;
@@ -212,17 +213,20 @@ header nav li a:hover {
     display: flex;
     flex-flow: row nowrap;
     margin-top: 28px;
-    gap: 40px;
+    gap: 35px;
 }
-.housesbox, .popularbox{
+
+.housesbox,
+.popularbox {
     background-color: #f2f2f2;
     border-radius: 20px;
-    padding: 22px 38px;
+    padding: 22px 30px;
     display: flex;
     flex-direction: column;
 }
 
-.housesbox h2, .popularbox h2 {
+.housesbox h2,
+.popularbox h2 {
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
@@ -237,26 +241,26 @@ header nav li a:hover {
     align-items: flex-start;
 }
 
-.housescards{
+.housescards {
     display: flex;
     justify-content: space-between;
     align-content: flex-start;
     flex-flow: row wrap;
-    gap: 30px;
+    gap: 15px;
     margin: 4px 0;
 
 }
 
 .housearticle {
-    width: 30.5%;
-    height: 199px;
+    width: 31%;
     background-color: #ffffff;
-    padding: 5px 5px 10px 5px;
+    padding: 5px 5px 15px 5px;
     display: flex;
     flex-flow: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .housearticle:hover {
@@ -275,10 +279,11 @@ header nav li a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding:0 10px;
+    padding: 0 10px;
+    height: 100%;
 }
 
-.housetitle h3{
+.housetitle h3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
@@ -315,7 +320,7 @@ header nav li a:hover {
     transition: 0.25s ease;
 }
 
-.housesbox .more  {
+.housesbox .more {
     border: none;
     font-weight: 700;
     font-size: 18px;
@@ -324,14 +329,14 @@ header nav li a:hover {
 }
 
 .housesbox .more:hover {
-    color: #0065FC; 
-    transition: 0.2s  ease;
+    color: #0065FC;
+    transition: 0.2s ease;
 }
 
 /* Popular */
 
 .popularbox {
-    width: 32%;
+    width: 33%;
 }
 
 .popularhead {
@@ -341,7 +346,7 @@ header nav li a:hover {
     flex-flow: row nowrap;
 }
 
-.popularhead i{
+.popularhead i {
     color: #0065FC;
 }
 
@@ -351,7 +356,7 @@ header nav li a:hover {
     gap: 33px;
 }
 
-.populararticle a {
+.populararticle {
     height: 144px;
     background-color: #ffffff;
     padding: 5px;
@@ -359,7 +364,8 @@ header nav li a:hover {
     flex-flow: row nowrap;
     justify-content: space-between;
     border-radius: 20px;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1) ;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
 }
 
 .populararticle:hover {
@@ -370,6 +376,7 @@ header nav li a:hover {
 .populararticle .houseimg {
     width: 40%;
 }
+
 .populararticle .houseimg img {
     height: 100%;
     width: 100%;
@@ -378,9 +385,12 @@ header nav li a:hover {
 }
 
 .populararticle .housedescription {
-    padding: 16px 10px 12px 20px;
+    padding: 10px 10px 12px 12px;
     margin: 0;
-    width : 66%
+    width: 66%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 /* SECTION ACTIVITES */
@@ -398,12 +408,16 @@ header nav li a:hover {
     display: flex;
     justify-content: space-between;
     gap: 40px;
+    height: 100%;
+    ;
 }
 
 .activitycard {
     width: 23%;
     border-radius: 20px;
+    height: 445px;
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+
 }
 
 .activitycard:hover {
@@ -418,26 +432,33 @@ header nav li a:hover {
     border-radius: 20px 20px 0 0;
 }
 
+.activitiesdescription {
+    height: 56px;
+    display: flex;
+    align-items: center;
+}
+
 .activitycard h3 {
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     margin: 0;
     padding: 15px;
+
 }
 
 /* FOOTER */
 
 footer {
     background-color: #F2F2F2;
-    padding:0;
+    padding: 0;
     margin-top: 60px;
 }
 
 footer nav {
     display: flex;
-    justify-content: flex-start;
-    gap: 220px;
+    justify-content: space-between;
+    gap: 5px;
     padding: 24px 0 46px 63px;
     margin: 0;
 }
@@ -447,9 +468,11 @@ footer nav h3 {
     font-size: 18px;
     line-height: 21px;
 }
+
 footer nav .footernav {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
+    width: 33%;
 }
 
 footer nav ul {
@@ -467,4 +490,268 @@ footer nav ul li {
 footer nav ul li a:hover {
     color: #0065FC;
     transition: 0.3s all;
+}
+
+
+/* MEDIA QUERIES TABLET */
+
+@media screen and (max-width: 991px) {
+
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+    .search nav {
+        align-items: baseline;
+    }
+
+    .search nav ul {
+        flex-flow: row wrap;
+        align-content: flex-start;
+        gap: 20px;
+
+    }
+
+    .hebergements {
+        flex-direction: column;
+    }
+
+    .housesbox {
+        width: 100%;
+        ;
+    }
+
+    .popularbox {
+        width: 100%;
+    }
+
+    .popularcards {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .populararticle {
+        width: 33%;
+        height: auto;
+
+    }
+
+    .activitycard {
+        height: 300px;
+    }
+
+    .activitycard img {
+        height: 230px;
+    }
+}
+
+/* MEDIA QUERIES MOBILE */
+
+@media screen and (max-width: 767px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+
+    body {
+        padding: 0;
+    }
+
+    header {
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    header img {
+        margin-top: 20px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        padding: 0;
+        width: 100%;
+        justify-content: space-between;
+
+    }
+
+    header nav ul li {
+        width: 50%;
+    }
+
+    header nav ul li a {
+        padding-bottom: 23px;
+        border-top: none;
+        border-bottom: solid 2px #f2f2f2;
+
+    }
+
+    header nav li a:hover {
+        border-bottom: solid 2px #0065FC;
+        border-top: none;
+
+    }
+
+    main {
+        padding: 30px 0;
+        margin: 0 auto;
+    }
+
+    .search {
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .search form {
+        padding: 24px 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .search form label {
+        width: 80px;
+    }
+
+    .search form input {
+        width: 100%;
+    }
+
+    .search form button span {
+        display: none;
+    }
+
+    .search form button i {
+        display: inline;
+    }
+
+    .search nav {
+        flex-flow: column;
+        align-items: flex-start;
+        margin: 0;
+        padding: 8px 0;
+    }
+
+    .search nav ul {
+        padding: 15px 0 0 0;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        gap: 12px;
+    }
+
+    .search nav ul li {
+        width: 48%;
+        justify-content: flex-start;
+        padding: 12px 0 12px 12px;
+        border-radius: 25px;
+    }
+
+    .search nav ul li {
+        font-size: 13px;
+    }
+
+    .search .countresult {
+        padding: 30px 0;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .search .countresult i {
+        min-width: 24px;
+    }
+
+    .search .countresult p {
+        margin: 0;
+        width: 100%;
+    }
+
+    .search p {
+        font-size: 15px;
+    }
+
+    .hebergements {
+        flex-flow: column-reverse;
+        padding: 0;
+        gap: 0;
+    }
+
+    .popularbox {
+        padding: 10px 20px 40px 20px;
+        border-radius: 0;
+    }
+
+    .popularcards {
+        flex-direction: column;
+    }
+
+    .populararticle {
+        width: 100%;
+        height: 144px;
+    }
+
+    .housesbox {
+        padding: 10px 20px;
+        margin: 0;
+        background-color: #ffffff;
+        border-radius: 0;
+    }
+
+    .housescards {
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+
+    .housearticle {
+        width: 100%;
+        height: 199px;
+    }
+
+    .more {
+        display: none;
+    }
+
+    #activites {
+        padding: 60px 20px;
+    }
+
+    #activites h2 {
+        width: 40%;
+        padding: 5px;
+    }
+
+    .activitiesbox {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .activitycard {
+        width: 100%;
+        height: 190px;
+    }
+
+    .activitycard img {
+        height: 134px;
+    }
+
+    
+
+    .activitiesdescription h3 {
+        margin: 0;
+        height: 100%;
+    }
+
+    footer {
+        padding: 20px;
+        margin: 0;
+    }
+
+    footer nav {
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+    }
+
+    footer nav .footernav {
+        width: 100%;
+        padding: 5px 0;
+    } 
+
 }

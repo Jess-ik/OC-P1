@@ -111,6 +111,10 @@ header nav li a:hover {
 
 }
 
+.search form input:focus::placeholder {
+    color: transparent;
+  }
+
 .search form button {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
